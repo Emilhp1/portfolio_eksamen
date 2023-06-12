@@ -1,0 +1,284 @@
+@font-face {
+  font-family: socialtattoo;
+  src: url(social_tattoo_reguler-webfont.woff), url(social_tattoo_reguler-webfont.woff2);
+}
+@font-face {
+  font-family: freehand;
+  src: url(vtc-freehandtattooone-webfont.woff), url(vtc-freehandtattooone-webfont.woff2);
+}
+
+/* navigation */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1px;
+  background-color: #f3bb8e;
+  box-shadow: 0 2px 5px #430503;
+  padding-left: 30%;
+}
+
+nav {
+  display: flex;
+  /* align-items: center; */
+  justify-content: center;
+}
+
+.menu {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding-left: 82.5px;
+}
+
+.menu li {
+  margin-right: 20px;
+}
+
+.menu li:last-child {
+  margin-right: 0;
+}
+
+.menu a {
+  display: inline-block;
+  color: #5c2f2c;
+  text-decoration: none;
+  font-size: 30px;
+  font-family: freehand;
+}
+
+.menu a:hover {
+  color: #034219;
+  cursor: pointer;
+}
+
+.burger {
+  width: 30px;
+  height: 20px;
+  cursor: pointer;
+}
+
+.burger .line {
+  width: 100%;
+  height: 2px;
+  background-color: #430503;
+  margin-bottom: 5px;
+}
+.burger {
+  display: none;
+}
+@media screen and (max-width: 750px) {
+  .menu {
+    display: none;
+  }
+  .burger {
+    display: block;
+  }
+  .burger.active .line:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+  }
+
+  .burger.active .line:nth-child(2) {
+    opacity: 0;
+  }
+
+  .burger.active .line:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -5px);
+  }
+
+  nav.active .menu {
+    display: block;
+    background-color: #f3bb8e;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+  }
+
+  nav.active .menu li {
+    margin: 0px 0px;
+  }
+
+  nav.active .menu a {
+    font-size: 20px;
+  }
+  header {
+    padding: 0%;
+  }
+}
+
+/* navigation slut */
+
+body {
+  background-color: #f3bb8e;
+}
+
+.forside_billede1 {
+  width: 50%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: -250px;
+  margin-bottom: -20%;
+}
+
+.rose1 {
+  transform: rotate(180deg);
+  width: 50%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: -750px;
+  margin-bottom: -45%;
+}
+.rose2 {
+  width: 50%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: -350px;
+  margin-bottom: -45%;
+}
+.billede_mig {
+  width: 50%;
+  border-style: solid;
+  border-color: #430503;
+  border-width: 20px;
+}
+
+.h1_forside {
+  font-family: freehand;
+  text-align: center;
+  font-size: 4vw;
+  color: #430503;
+}
+h1 {
+  font-family: freehand;
+}
+p {
+  font-size: 1.5vw;
+  font-family: ysabeau;
+}
+.screenshots {
+  width: 85%;
+  border-style: solid;
+  border-color: #430503;
+  border-width: 20px;
+}
+.portfolio_h1 {
+  text-align: center;
+  color: #430503;
+}
+.link {
+  margin: 25px;
+  margin-left: 60%;
+  font-size: 1.5vw;
+  font-family: ysabeau;
+  color: #034219;
+}
+
+.button {
+  width: 15%;
+  margin-left: 43%;
+  margin-top: -30px;
+}
+
+/* Mobilsite */
+@media screen and (max-width: 750px) {
+  .forside_billede1 {
+    width: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0px;
+    margin-bottom: -35%;
+  }
+  .h1_forside {
+    font-size: 6vw;
+  }
+  .rose1 {
+    transform: rotate(180deg);
+    width: 75%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -650px;
+    margin-bottom: -45%;
+  }
+  .rose2 {
+    width: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 250px;
+  }
+  .screenshots {
+    z-index: -1;
+    margin-top: 30px;
+  }
+  p {
+    font-size: 4vw;
+    font-family: ysabeau;
+  }
+  .link {
+    font-size: 4vw;
+    font-family: ysabeau;
+  }
+  .billede_mig {
+    margin: 20%;
+  }
+  header {
+    box-shadow: 0 0px 0px #430503;
+  }
+  .next {
+    font-size: 5vw;
+    margin-left: 35%;
+  }
+}
+
+/* mobilsite slut */
+
+/* Desktop */
+@media screen and (min-width: 750px) {
+  .projekter:hover {
+    transform: translateX(3px);
+    box-shadow: inset 0px 2px 2px 20px #430503;
+  }
+  .button:hover {
+    transform: scale(1.1);
+  }
+}
+/* desktop slut */
+
+#blomst_container {
+  width: 50%;
+  aspect-ratio: 48.74/63.23;
+  top: 20%;
+  right: 62%;
+
+  position: absolute;
+}
+#blomst_sprite {
+  width: 100%;
+  height: 100%;
+  background-image: url(billeder/rose3.png);
+  background-size: cover;
+  transform: rotate(90deg);
+}
+#blomst_container2 {
+  width: 50%;
+  aspect-ratio: 48.74/63.23;
+  top: 20%;
+  right: -12%;
+
+  position: absolute;
+}
+#blomst_sprite2 {
+  width: 100%;
+  height: 100%;
+  background-image: url(billeder/rose3.png);
+  background-size: cover;
+  transform: rotate(270deg);
+}
