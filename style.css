@@ -236,6 +236,11 @@ p {
     font-size: 5vw;
     margin-left: 35%;
   }
+  .button {
+    width: 30%;
+    margin-left: 36%;
+    margin-top: -25px;
+  }
 }
 
 /* mobilsite slut */
